@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>React Sally Resume</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Metrophobic"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="application-root"></div>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script type="text/babel">
+      // Our code will go here
+      function App(props) {
+        return (
+          <div>
+            <header>
+              <h1> {props.name}</h1>
+            </header>
+            <main>
+              <address>
+                <p>222 ,xyz street ,abc</p>
+                <p>tel:+321-525-2368 </p>
+                <p>
+                  {" "}
+                  email :{" "}
+                  <a
+                    href="mailto:tf.sally.croft@gmail.com?subject=mail "
+                    target="_blank"
+                  >
+                    {" "}
+                    sally.croft@gmail.com
+                  </a>
+                </p>
+              </address>
+              <img
+                src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fcoolspotters.com%2Ffiles%2Fphotos%2F1172852%2Filana-glazer-profile.jpg%3F1394552322&f=1"
+                alt="This is a picture of Sally croft"
+              />
+              <section>
+                <h2> Education</h2>
+                <ul>
+                  <li>1.Bloc Web Developer Track 2018-2019</li>
+                  <li>
+                    Bachelors in Engieering (Electronics and communication)-abc
+                    university 2017
+                  </li>
+                </ul>
+                <h2> Experience </h2>
+                <ul>
+                  <li>
+                    <h3>Web Developer at abcde n co. 2018-present</h3>
+                    <p>
+                      Developed xhtml/css/javascript for various projects using
+                      Adobe Creative Suite CS5, jQuery, jQueryUI, ASP.NET, JSP{" "}
+                    </p>
+                    <p>
+                      Developed javascript bookmarklets to validate document
+                      format, identify specific errors, and more easily navigate
+                      the client environment.
+                    </p>
+                    <p>
+                      {" "}
+                      Created custom HTML emails for clients/in-house
+                      newsletters and invitations for distribution to our
+                      databases.
+                    </p>
+                  </li>
+                  <li>
+                    <h3>Intern at wxyz inc 2017-2018 </h3>
+                    <p>
+                      Design and create optimized landing pages in HTML5 and CSS
+                      to support company' s marketing and promotional needs
+                      which includes SalesForce integration and cross-browser
+                      compatibility.
+                    </p>
+                    <p>
+                      Provide web support via email, phone, and other electronic
+                      communications.
+                    </p>
+                  </li>
+                </ul>
+              </section>
+            </main>
+          </div>
+        );
+      }
+
+      ReactDOM.render(
+        <App name="Sally Croft" />,
+        document.querySelector("#application-root")
+      );
+    </script>
+  </body>
+</html>
